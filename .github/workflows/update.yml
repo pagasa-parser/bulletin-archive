@@ -1,0 +1,22 @@
+on:
+    workflow_dispatch:
+
+jobs:
+    update:
+        name: Update archives from the Internet Archive
+        runs-on: ubuntu-latest
+
+        steps:
+            -   uses: actions/checkout@v3
+            -   name: Install `internetarchive` from pip
+                run: pip install --upgrade internetarchive
+            -   name: Download archives
+                working-directory: archive
+                run: ia download --search="uploader:chlodaidanalejandro@hotmail.com (subject:bulletin)" --glob="*.pdf"
+            -   name: Commit new archives
+                uses: EndBug/add-and-commit@v9
+                with:
+                    default_author: github_actions
+                    add: "."
+                    message: Updating archives
+                    push: true
