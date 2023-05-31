@@ -16,7 +16,7 @@ Filenames follow the format `PAGASA_YY_TCXX_StormName_TCB#NN.pdf`:
 * `TCB` determines the bulletin type. `SWB` refers to a Severe Weather Bulletin, `TCB` refers to a Tropical Cyclone Bulletin, and `TCA` refers to a Tropical Cyclone Advisory (only supplied if the storm was previously tracked as a tropical cyclone within the [Tropical Cyclone Advisory Domain](https://en.wikipedia.org/wiki/Philippine_Area_of_Responsibility#Other_areas_forecasting_domains), or TCAD).
 * `NN` is the bulletin number, zero-padded.
 
-The final bulletin is always prepended with `-FINAL` after the bulletin number. Special bulletins, numbered `2A` or similar, have the extra letters removed.
+The final bulletin is always appended with `-FINAL` after the bulletin number. Special bulletins, numbered `2A` or similar, have the extra letters removed.
 
 ## Updating
 This repository can be updated with one click using GitHub Actions. This is restricted only for repository members.
