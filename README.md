@@ -24,7 +24,7 @@ This repository can be updated with one click using GitHub Actions. This is rest
 Should you wish to update manually, or if you want to update your local copy, ensure that you have Python, pip, and the `internetarchive` pip package installed. Afterwards, run the following command in the `archive/` folder.
 
 ```bash
-ia download --search="uploader:chlodaidanalejandro@hotmail.com (subject:bulletin)" --glob="*.pdf"
+ia download --search="uploader:chlod@chlod.net (subject:bulletin)" --glob="*.pdf"
 ```
 
 ## Infrastructure
