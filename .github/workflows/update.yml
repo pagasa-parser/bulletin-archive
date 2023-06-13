@@ -12,7 +12,7 @@ jobs:
                 run: pip install --upgrade internetarchive
             -   name: Download archives
                 working-directory: archive
-                run: ia download -i --search="uploader:chlodaidanalejandro@hotmail.com (subject:bulletin)" --glob="*.pdf"
+                run: ia download -i --search="uploader:chlod@chlod.net (subject:bulletin)" --glob="*.pdf"
             -   name: Commit new archives
                 uses: EndBug/add-and-commit@v9
                 with:
