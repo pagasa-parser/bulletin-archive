@@ -1,4 +1,4 @@
-name: "Update"
+name: Update
 
 on:
     workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
         steps:
             -   uses: actions/checkout@v3
             -   name: Install `internetarchive` from pip
-                run: pip install --upgrade ${{ inputs.useMasterIA && "git+https://github.com/jjjake/internetarchive.git" || "internetarchive" }}
+                run: pip install --upgrade ${{ inputs.useMasterIA && 'git+https://github.com/jjjake/internetarchive.git' || 'internetarchive' }}
             -   name: Download archives
                 working-directory: archive
                 run: ia download -i --search="uploader:chlod@chlod.net (subject:bulletin)" --glob="*.pdf"
