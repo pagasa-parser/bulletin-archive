@@ -6,7 +6,7 @@ This repository exists for the purpose of mass-testing PAGASA Parser tools with 
 This is a Git mirror of the archives [hosted on the Internet Archive](https://archive.org/details/@chlodalejandro?tab=uploads&and%5B%5D=subject%3A%22severe+weather+bulletin%22&and%5B%5D=subject%3A%22tropical+cyclone+advisory%22&and%5B%5D=subject%3A%22tropical+cyclone+bulletin%22&sort=-publicdate). The Internet Archive contains derived versions, including image renders. This repository only contains the original bulletin PDF files from the archive.
 
 ## Structure
-Every bulletin is organized by storm in the `archive/` folder. The folder names mirror their Internet Archive identifiers (explained in [Infratstructure](#infrastructure)) and only contain PDF versions of the data.
+Every bulletin is organized by storm in the `archive/` folder. The folder names mirror their Internet Archive identifiers (explained in [Infrastructure](#infrastructure)) and only contain PDF versions of the data.
 
 Filenames follow the format `PAGASA_YY_TCXX_StormName_TCB#NN.pdf`:
 * `YY` is the last two digits of the year (`23` for 2023, etc.).
