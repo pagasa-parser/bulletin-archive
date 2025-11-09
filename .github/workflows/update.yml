@@ -18,6 +18,7 @@ jobs:
             -   name: Install `internetarchive` from pip
                 run: pip install --upgrade ${{ inputs.useMasterIA && 'git+https://github.com/jjjake/internetarchive.git' || 'internetarchive' }}
             -   name: Download archives
+                continue-on-error: true
                 working-directory: archive
                 run: ia download -i --search="uploader:chlod@chlod.net (subject:bulletin)" --glob="*.pdf"
             -   name: Commit new archives
