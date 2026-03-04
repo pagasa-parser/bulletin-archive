@@ -3,7 +3,7 @@ This repository contains a near-complete collection of Severe Weather Bulletins 
 
 This repository exists for the purpose of mass-testing PAGASA Parser tools with every single SWB and TCB, ensuring that a wide range of cases are accomodated. This helps future-proof these tools, and ensures proper delivery of data.
 
-This is a Git mirror of the archives [hosted on the Internet Archive](https://archive.org/details/@chlodalejandro?tab=uploads&and%5B%5D=subject%3A%22severe+weather+bulletin%22&and%5B%5D=subject%3A%22tropical+cyclone+advisory%22&and%5B%5D=subject%3A%22tropical+cyclone+bulletin%22&sort=-publicdate). The Internet Archive contains derived versions, including image renders. This repository only contains the original bulletin PDF files from the archive.
+This is a Git mirror of the archives [hosted on the Internet Archive](https://archive.org/details/pagasa-bulletins?tab=collection&query=uploader%3Achlod%40chlod.net&sort=-date). The Internet Archive contains derived versions, including image renders. This repository only contains the original bulletin PDF files from the archive.
 
 ## Structure
 Every bulletin is organized by storm in the `archive/` folder. The folder names mirror their Internet Archive identifiers (explained in [Infrastructure](#infrastructure)) and only contain PDF versions of the data.
